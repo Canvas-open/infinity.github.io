@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulk Launcher</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #121212; color: white; }
+        button { padding: 15px 30px; font-size: 18px; cursor: pointer; border-radius: 8px; border: none; background: #3498db; color: white; transition: 0.2s; }
+        button:hover { background: #2980b9; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <button onclick="launchSites()">Launch All Sites (about:blank)</button>
+
+    <script>
+    function launchSites() {
+        const sites = [
+            "https://s3.amazonaws.com/angelfern/index.html",
+            "https://s3.amazonaws.com/deaganfern/index.html",
+            "https://deaganfern.s3.amazonaws.com/index.html",
+            "https://macrolomath.s3.amazonaws.com/index.html",
+            "https://iloveliteratures.s3.amazonaws.com/index.html",
+            "https://bullmath.s3.amazonaws.com/index.html",
+            "https://bulllightspeed.s3.amazonaws.com/index.html",
+            "https://bullisgoated.s3.amazonaws.com/index.html",
+            "https://bulledu.s3.amazonaws.com/index.html",
+            "https://bullguardian.s3.amazonaws.com/index.html",
+            "https://cdn.jsdelivr.net/gh/pn-math/vcsayt/dist/index.svg",
+            "https://cdn.jsdelivr.net/gh/TwiLabs/math/dist/index.svg",
+            "https://cdn.jsdelivr.net/gh/TwiLabs/history/dist/index.svg",
+            "https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg",
+            "https://cdn.jsdelivr.net/gh/TwiLabs/art/dist/index.svg",
+            "https://raw.esm.sh/gh/NightProxy/DD-Static/dist/index.svg",
+            "https://raw.esm.sh/gh/TwiLabs/math/dist/index.svg",
+            "https://raw.esm.sh/gh/TwiLabs/history/dist/index.svg",
+            "https://raw.esm.sh/gh/TwiLabs/daydreaming/dist/index.svg",
+            "https://raw.esm.sh/gh/TwiLabs/art/dist/index.svg",
+            "https://cdn.jsdelivr.net/gh/dogeub/-/index.svg",
+            "https://music-lify.web.app/",
+            "https://mircosoft-windows.web.app/",
+            "https://dmssv188xbv87.cloudfront.net/index.html",
+            "https://d1jjmz8198xmlw.cloudfront.net/index.html",
+            "https://d3k3w4kgudbm85.cloudfront.net/index.html",
+            "https://cdn.jsdelivr.net/gh/rykcbaoolNEW/dogeub/index.svg",
+            "https://s3.amazonaws.com/lsrelay-a/index.html",
+            "https://storage.googleapis.com/instructure/index.svg",
+            "https://s3.amazonaws.com/deltamath-demo/index.html#/search",
+            "https://unpkg.com/browselucide@1.0.1/logo.svg#/",
+            "https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg",
+            "https://esm.sh/gh/un-pkg/npm@543b4c5/bundle-min.svg",
+            "https://aleks-ela-work.web.app/",
+            "https://www.msn.com/en-us/play",
+            "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/discrete-chaos-3164@main/INVADDEX.SVG",
+            "https://nirbytes-relic.b-cdn.net/",
+            "https://cdn.jsdelivr.net/gh/PeteZah-G/PeteZahStaticDone@main/new.svg",
+            "https://scienceclass9.b-cdn.net/pubup/?theme=pink&dark=true",
+            "https://writingportal1.b-cdn.net",
+            "https://chemistrycampus2.b-cdn.net",
+            "https://seminarboard3.b-cdn.net",
+            "https://researchteacher4.b-cdn.net",
+            "https://mathteacher9.b-cdn.net",
+            "https://languagejournal8.b-cdn.net",
+            "https://historyschool7.b-cdn.net",
+            "https://tutortext6.b-cdn.net",
+            "https://studyteacher5.b-cdn.net"
+        ];
+
+        sites.forEach(url => {
+            const win = window.open('about:blank', '_blank');
+            if (win) {
+                const iframe = win.document.createElement('iframe');
+                iframe.src = url;
+                iframe.style.width = "100vw";
+                iframe.style.height = "100vh";
+                iframe.style.border = "none";
+                iframe.style.position = "fixed";
+                iframe.style.top = "0";
+                iframe.style.left = "0";
+
+                win.document.body.appendChild(iframe);
+                win.document.body.style.margin = "0";
+                win.document.body.style.padding = "0";
+            }
+        });
+    }
+    </script>
+</body>
+</html>
